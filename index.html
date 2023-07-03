@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JsonEditor</title>
+  <link rel="stylesheet" href="node_modules/electron-tabs/electron-tabs.css">
+</head>
+<body style="margin:0">
+
+<div class="etabs-tabgroup">
+  <div class="etabs-tabs"></div>
+  <div class="etabs-buttons"></div>
+</div>
+<div class="etabs-views"></div>
+
+
+<script>
+  //const TabGroup = require('electron-tabs') normally but for demo :
+  const TabGroup = require("electron-tabs");
+
+  let tabGroup = new TabGroup({
+    newTab: {
+      title: 'New Tab',
+      src: 'editor.html',
+      visible: true,
+      active: true,
+      closable: true
+    }
+  });
+
+  tabGroup.addTab({
+    title: 'New Tab',
+    src: 'editor.html',
+    visible: true,
+    active: true,
+    closable: true
+  });
+
+  tabGroup.on("tab-removed", (tab, tabGroup) => {
+    tab.close()
+  });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "json-editor",
+  "version": "1.0.0",
+  "description": "Create, open, edit, and save local JSON files in a GUI.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "packager": "electron-packager ./ JsonEditor --platform=win32 --arch=x64 --overwrite --out ./outputs --icon=./images/icon.ico --asar"
+  },
+  "keywords": [
+    "Electron",
+    "JSON",
+    "edit",
+    "editor",
+    "tree"
+  ],
+  "author": "ig-ealbert",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "electron-packager": "^16.0.0",
+    "electron-tabs": "^0.15.0",
+    "jsoneditor": "^9.9.2"
+  },
+  "electronPackagerConfig": {
+    "asar": true
+  },
+  "devDependencies": {
+    "electrom": "^0.1.8",
+    "electron": "^21.1.0"
+  }
+}

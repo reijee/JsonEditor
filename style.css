@@ -1,0 +1,17 @@
+html,body,#jsonEditor{
+    height: 100%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
